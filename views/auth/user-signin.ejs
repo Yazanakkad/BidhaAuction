@@ -1,0 +1,40 @@
+<%- include('./includes/head.ejs') %> <%- include('./includes/header.ejs') %>
+<h1 class="text-center text-light">Sign in</h1>
+
+<div class="container mt-5 w-50">
+	<form action="/user-signup" method="post">
+<div class="input-group mb-3">
+    <input
+        required
+        type="email"
+        class="form-control"
+        placeholder="Email"
+        aria-label="Email"
+        aria-describedby="basic-addon2"
+        name="user[email]"
+    />
+    <span class="input-group-text" id="basic-addon2">@example.com</span>
+</div>
+
+<div class="align-items-center">
+    <div class="">
+        <input
+            required
+            type="password"
+            id="inputPassword6"
+            class="form-control"
+            placeholder="Password"
+            aria-describedby="passwordHelpInline"
+            name="user[password]"
+        />
+    </div>
+</div>
+<div class="mt-3">
+    <button type="submit" class="m-auto btn btn-primary" >
+        Sign in
+    </button>
+</div>
+</form>
+</div>
+<%- include("./includes/end.ejs") %>
+
